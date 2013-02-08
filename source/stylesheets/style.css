@@ -4,8 +4,8 @@
 body {
   padding-top: 30px;
   background: #f2f2f2;
-  background-image: url(../img/subtle_surface.png);
-  font-family: Oxygen;
+  background-image: url(../images/subtle_surface.png);
+  font-family: Oxygen, "Helvetica Neue", Arial, sans-serif;
   color: #000;
 }
 
@@ -17,24 +17,26 @@ a:hover {color: #333;}
 .separator {font-size: 10px !important; color: #C11623; letter-spacing: 4px; text-align: center; margin-bottom: 20px;}
 .separator:last-child {display: none;}
 
+/* Don't take up the entire width on large displays, keep it tight */
 .container {max-width: 970px;}
+
 #wrapper {
   border: 1px solid #ccc;
   background: #fff;
   margin-bottom: 30px;
-  margin: auto;
 }
 
-#sidebar p {margin: 0.5em 0; font-size: 1.3em; text-align: right;}
+#sidebar p {margin: 0.5em 0; font-size: 1.3em; text-align: right; font-family: Oxygen, "Helvetica Neue", Arial, sans-serif;}
 #blurb {font-size: 1em !important; font-family: Oxygen; font-weight: normal; line-height: 1.4em;}
 
 #social-icons {letter-spacing: 0.2em; font-size: 2em !important; text-align: right; margin-top: 0;}
-#social-icons a {text-decoration: none; color: #000;}
+#social-icons a {text-decoration: none; color: #333;}
 #social-icons a:hover {color: #C11623;}
 
 #tags {font-size: 1em !important; line-height: 2em; margin-top: 10px;}
-#tags a {color: #fff; background: #C11623; padding: 2px 5px; margin: 2px; text-decoration: none;}
+#tags a, #tags span {color: #fff; background: #C11623; padding: 2px 5px; margin: 2px; text-decoration: none;}
 #tags a:hover {background: #333;}
+#tags span {background: #333;}
 
 #sidebar, #content {padding: 30px 0 30px 30px;}
 
@@ -48,6 +50,8 @@ a:hover {color: #333;}
 .image img {position: relative; z-index: 1; border: 1px solid #ccc;}
 
 .image h3 {background: rgba(0,0,0,0.85); position: absolute; bottom: 0; left: 0px; color: #fff; z-index: 2; margin: 0; padding: 0.25em 1.4em; font-size: 1.8em; line-height: 2em;}
+
+#content strong {min-width: 55px; display: inline-block; font-family: Arial;}
 
 @media (min-width: 1200px) {
 
@@ -68,9 +72,11 @@ a:hover {color: #333;}
 @media (max-width: 767px) { 
   #sidebar {padding: 15px 15px 0 15px;}
   #tags {margin-top: 0;}
-  #content {padding: 0 15px 15px 15px; border: 0;}
+  #content {padding: 10px 15px 15px 15px; border: 0;}
 }
 
 @media (max-width: 480px) {
+  body {padding-top: 20px;}
   #content {font-size: 12px;}
+  .separator {font-size: 10px !important; color: #C11623; letter-spacing: 4px; text-align: center; margin-bottom: 10px;}
 }
