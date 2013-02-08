@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <title><%= data.page.title || "Daniel Westendorf | Portfolio" %></title>
+    <title><%= data.page.title || "Portfolio" %> | Daniel Westendorf</title>
     
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
@@ -12,9 +12,11 @@
     <div class="row-fluid">
       <div id="wrapper" class="span12">
         <div id="sidebar" class="span3">
-          <div id="logo">
-            PORTFOLIO
-          </div>
+          <a id="logo" href="/">
+            <div>
+              PORTFOLIO
+            </div>
+          </a>
           <p>daniel westendorf</p>
           <p id="blurb">
             Sysadmin, developer, and hacker. Fixing challenging problems with simple solutions.
