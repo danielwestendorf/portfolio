@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Cabin:700);
+
+body {
+  padding-top: 30px;
+  background: #f2f2f2;
+  background-image: url(../img/subtle_surface.png);
+  font-family: Oxygen;
+  color: #000;
+}
+
+h1,h2,h3,h4,h5 {font-family: Cabin, Arial; font-weight: 700;}
+
+a {color: #C11623; text-decoration: underline;}
+a:hover {color: #333;}
+
+.separator {font-size: 10px !important; color: #C11623; letter-spacing: 4px; text-align: center; margin-bottom: 20px;}
+.separator:last-child {display: none;}
+
+.container {max-width: 970px;}
+#wrapper {
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+#sidebar p {margin: 0.5em 0; font-size: 1.3em; text-align: right;}
+#blurb {font-size: 1em !important; font-family: Oxygen; font-weight: normal; line-height: 1.4em;}
+
+#social-icons {letter-spacing: 0.2em; font-size: 2em !important; text-align: right; margin-top: 0;}
+#social-icons a {text-decoration: none; color: #000;}
+#social-icons a:hover {color: #C11623;}
+
+#tags {font-size: 1em !important; line-height: 2em; margin-top: 10px;}
+#tags a {color: #fff; background: #C11623; padding: 2px 5px; margin: 2px; text-decoration: none;}
+#tags a:hover {background: #333;}
+
+#sidebar, #content {padding: 30px 0 30px 30px;}
+
+#logo {background: #333; color: #fff;  font-size: 2.2em; padding-top: 0.9em; text-align: right; font-family: Arial; }
+a#logo {text-decoration: none;}
+
+#content {border-left: 1px solid #ccc; min-height: 500px;  padding-right: 30px;}
+
+.image {position: relative;}
+
+.image img {position: relative; z-index: 1; border: 1px solid #ccc;}
+
+.image h3 {background: rgba(0,0,0,0.85); position: absolute; bottom: 0; left: 0px; color: #fff; height: 1.7em; z-index: 2; margin: 0; padding: 0.1em 1.4em; font-size: 1.8em; line-height: 2em;}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1199px) and (min-width: 980px) {
+  #sidebar {font-size: 11px;}
+  #logo {line-height: 0.7em;}
+  #content {font-size: 14px;}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #logo {font-size: 1.6em; line-height: 0.7em;}
+    #sidebar {font-size: 10px;}
+    #content {font-size: 12px;}
+}
+
+@media (max-width: 767px) { 
+  #sidebar {padding: 15px 15px 0 15px;}
+  #tags {margin-top: 0;}
+  #content {padding: 0 15px 15px 15px; border: 0;}
+}
+
+@media (max-width: 480px) {
+  #content {font-size: 12px;}
+}

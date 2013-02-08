@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= data.page.title || "Daniel Westendorf | Portfolio" %></title>
+    
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+  <div class="container">
+    <div class="row-fluid">
+      <div id="wrapper" class="span12">
+        <div id="sidebar" class="span3">
+          <div id="logo">
+            PORTFOLIO
+          </div>
+          <p>daniel westendorf</p>
+          <p id="blurb">
+            Sysadmin, developer, and hacker. Fixing challenging problems with simple solutions.
+          </p>
+          <p id="social-icons"><a href="http://www.facebook.com/dwestendorf"><i class="icon-facebook-sign"></i></a><a href="http://www.twitter.com/dwestendorf"><i class="icon-twitter-sign"></i></a><a href="http://github.com/danielwestendorf"><i class="icon-github-sign"></i></a><a href="http://www.linkedin.com/dwestendorf"><i class="icon-linkedin-sign"></i></a></p>
+          <p id="tags">
+            <% blog.tags.each do |tag, details| %>
+              <%= link_to tag, tag_path(tag) %>
+            <% end %>
+          </p>
+        </div>
+        <div id="content" class="span9">
+          <% page_articles.each do |article| %>
+            <%= article.summary %>
+            <%= link_to "Read more", article %>
+            <p class="separator"><i class="icon-circle"></i> <i class="icon-circle"></i> <i class="icon-circle"></i></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body>
+  </body>
+</html>
