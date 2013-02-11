@@ -1,14 +1,17 @@
 jQuery ->
-  jQuery('body').on 'click', '.DWjax', ->
-    element = jQuery(this)
-    href = element.attr('href')
-    new DWjax(href, true)
-    false
 
-  jQuery(window).bind 'popstate', (e)->
-    if window.pushed == true || typeof window.pushed == "undefined"
-      console.log 'going back!'
-      new DWjax(location.pathname, false)
+  # Make sure pushState is supported before continuing
+  if history.pushState
+    jQuery('body').on 'click', '.DWjax', ->
+      element = jQuery(this)
+      href = element.attr('href')
+      new DWjax(href, true)
+      false
+
+    jQuery(window).bind 'popstate', (e)->
+      if window.pushed == true || typeof window.pushed == "undefined"
+        console.log 'going back!'
+        new DWjax(location.pathname, false)
 
 class DWjax
   constructor: (url, push) ->
