@@ -8,14 +8,13 @@
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <%= stylesheet_link_tag "all" %>
     <%= stylesheet_link_tag "high-dpi", media: "only screen and (-webkit-min-device-pixel-ratio: 2)" %>
-    <%= javascript_include_tag  "all" %>
   </head>
   <body>
     <div class="container">
       <div class="row-fluid">
         <div id="wrapper" class="span12">
           <div id="sidebar" class="span3">
-            <a id="logo" href="/">
+            <a id="logo" href="/" class="DWjax">
               <div>
                 PORTFOLIO
               </div>
@@ -30,7 +29,7 @@
                 <% if self.current_resource.metadata[:locals]["tagname"] && tag == tagname %>
                   <span><%= tag %></span>
                 <% else %>
-                  <%= link_to tag, tag_path(tag) %>
+                  <%= link_to tag, tag_path(tag), class: 'DWjax' %>
                 <% end %>
               <% end %>
             </p>
@@ -38,7 +37,7 @@
           <div id="content" class="span9">
             <% page_articles.each do |article| %>
               <%= article.summary %>
-              <%= link_to "Read more", article %>
+              <%= link_to "Read more", article, class: 'DWjax' %>
               <p class="separator"><i class="icon-circle"></i> <i class="icon-circle"></i> <i class="icon-circle"></i></p>
             <% end %>
           </div>
@@ -50,5 +49,7 @@
         </div>
       </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <%= javascript_include_tag  "all" %>
   </body>
 </html>
