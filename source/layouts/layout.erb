@@ -24,7 +24,7 @@
             <p id="blurb">
               Sysadmin, developer, and hacker. Fixing challenging problems with simple solutions.
             </p>
-            <p id="social-icons"><a href="http://www.facebook.com/dwestendorf"><i class="icon-facebook-sign"></i></a><a href="http://www.twitter.com/dwestendorf"><i class="icon-twitter-sign"></i></a><a href="http://github.com/danielwestendorf"><i class="icon-github-sign"></i></a><a href="http://www.linkedin.com/dwestendorf"><i class="icon-linkedin-sign"></i></a></p>
+            <p id="social-icons"><a target="_blank" href="http://www.facebook.com/deedubaya"><i class="icon-facebook-sign"></i></a><a target="_blank" href="http://www.twitter.com/dwestendorf"><i class="icon-twitter-sign"></i></a><a target="_blank" href="http://github.com/danielwestendorf"><i class="icon-github-sign"></i></a><a target="_blank" href="http://www.linkedin.com/pub/daniel-westendorf/4/404/76b"><i class="icon-linkedin-sign"></i></a></p>
             <p id="tags">
               <% current_article.tags.each do |tag, details| %>
                 <%= link_to tag, tag_path(tag) %>
@@ -34,6 +34,11 @@
           <div id="content" class="span9">
             <%= yield %>
           </div>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span12" id="footer">
+          &copy; 2013 Daniel Westendorf - <a target="_blank" href="https://github.com/danielwestendorf/portfolio"> See the Source</a>
         </div>
       </div>
     </div>

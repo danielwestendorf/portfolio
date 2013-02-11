@@ -53,6 +53,9 @@ a:hover {color: #333;}
 
 #content strong {min-width: 55px; display: inline-block; font-family: Arial;}
 
+#footer {text-align: center; color: #aaa;}
+#footer a {color: #aaa;}
+
 @media (min-width: 1200px) {
 
 }
