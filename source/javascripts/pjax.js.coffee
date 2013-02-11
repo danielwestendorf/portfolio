@@ -38,6 +38,7 @@ class DWjax
     console.log 'Loading data for ' + @url
 
     jQuery('div#wrapper').html(@content)
+    document.title = @title
 
     if @push
       window.history.pushState(null, null, @url)
