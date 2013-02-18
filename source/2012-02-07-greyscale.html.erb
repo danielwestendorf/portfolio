@@ -1,14 +1,15 @@
 ---
 title: jQuery.GreyScaleImage
 tags: Open Source, HTML, Canvas, Javascript, jQuery
+image: greyscale.jpg
+blurb: Create a greyscale image rollover effect, all client side.
 ---
-
-<div class="image">
-  <%= image_tag "greyscale.jpg" %>
-  <h3>jQuery.GreyScaleImage</h3>
-</div>
-<p>Create a greyscale image rollover effect client side.</p>
 READMORE
+<div class="image">
+  <%= image_tag data.page.image %>
+  <h3><%= data.page.title %></h3>
+</div>
+<p><%= data.page.blurb %></p>
 <p>Built using HTML5 Canvas, Javascript, avoid the server side work and network overhead of creating greyscale versions of images.</p>
 <p class="separator"><i class="icon-circle"></i> <i class="icon-circle"></i> <i class="icon-circle"></i></p>
 <p><strong>Demo:</strong> <a target="_blank" href="http://www.coon-and-friends.com/greyscale-demo.html">http://www.coon-and-friends.com/greyscale-demo.html</a></p>

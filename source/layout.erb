@@ -36,7 +36,13 @@
           </div>
           <div id="content" class="span9">
             <% page_articles.each do |article| %>
-              <%= article.summary %>
+              <a href="<%= article.url %>" class="DWjax">
+                <div class="image">
+                  <%= image_tag article.data.image %>
+                  <h3><%= article.data.title %></h3>
+                </div>
+              </a>
+              <p><%= article.data.blurb %></p>
               <%= link_to "Read more", article, class: 'DWjax' %>
               <p class="separator"><i class="icon-circle"></i> <i class="icon-circle"></i> <i class="icon-circle"></i></p>
             <% end %>

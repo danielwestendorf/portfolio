@@ -1,12 +1,13 @@
 ---
-title: Eva Shtern Portfolio
+title: Eva Shtern's Portfolio
 tags: HTML, Javascript, jQuery, Responsive Web Design
+image: evashtern.jpg
+blurb: Eva needed a low cost, low tech, solution to publish her work. She brought the design, I wrote the HTML and Javascript to make it happen.
 ---
-
-<div class="image">
-  <%= image_tag "evashtern.jpg" %>
-  <h3>Eva Shtern's Portfolio</h3>
-</div>
-<p>Eva needed a low cost, low tech, solution to publish her work. She brought the design, I wrote the HTML and Javascript to make it happen.</p>
 READMORE
+<div class="image">
+  <%= image_tag data.page.image %>
+  <h3><%= data.page.title %></h3>
+</div>
+<p><%= data.page.blurb %></p>
 <p><strong>Website:</strong> <a target="_blank" href="http://evashtern.com">http://evashtern.com</a></p>

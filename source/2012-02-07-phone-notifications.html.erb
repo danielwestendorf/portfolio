@@ -1,0 +1,16 @@
+---
+title: Phone Notifications
+tags: Open Source, Ruby, AWS, Twilio
+image: twilio.jpg
+blurb: I'm a big fan of asynchronous communication, but sometimes you need immediate notifications. Using Ruby and a few gems, I was able to mash together a quick script that is worth its weight in gold. The goal? To get notified of something immediately via phone.
+---
+READMORE
+<div class="image">
+  <%= image_tag data.page.image %>
+  <h3><%= data.page.title %></h3>
+</div>
+<p><%= data.page.blurb %></p>
+<p class="separator"><i class="icon-circle"></i> <i class="icon-circle"></i> <i class="icon-circle"></i></p>
+<p>The first step to providing great uptime is to monitor and respond to application issues at all hours of the day. Being a one man show can make this a difficult task; we don't all check our email in our sleep. Sometimes you need an immediate interrupting notification to make this possible. That notification should be a phone call.</p>
+<p>Using the Twilio and Amazon's S3 (to avoid the need for any other type of server to integrate with Twilio) API's, I've been able to do just that. The monitoring system detects an important issue (network, power, or critical error?) that I want to be notified about immediately, it fires off this script. Within moments I know about the problem and can act on it.</p>
+<p><strong>Source:</strong> <a target="_blank" href="https://gist.github.com/danielwestendorf/4962409">https://gist.github.com/danielwestendorf/4962409</a></p>

@@ -43,7 +43,9 @@ a:hover {color: #333;}
 #logo {text-decoration: none;}
 #logo div {background: #333; color: #fff;  font-size: 2.2em; padding-top: 0.9em; text-align: right; font-family: Arial; }
 
-#content {border-left: 1px solid #ccc; min-height: 500px;  padding-right: 30px;}
+#content {border-left: 1px solid #ccc;  padding-right: 30px;}
+#content p::selection, #content p ::-moz-selection, #content p ::-webkit-selection {background: #C11623; color: #fff;}
+#content a::selection, #content a ::-moz-selection, #content a ::-webkit-selection {color: #333; background: #C11623;}
 
 .image {position: relative;}
 

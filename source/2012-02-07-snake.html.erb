@@ -1,14 +1,15 @@
 ---
 title: Snake
 tags: Open Source, HTML, Canvas, Javascript, CoffeeScript
+image: snake.jpg
+blurb: Everybody who had a classic Nokia cell phone remembers the game Snake. What better game to replicate in the browser?
 ---
-
-<div class="image">
-  <%= image_tag "snake.jpg" %>
-  <h3>Snake</h3>
-</div>
-<p>Everybody who had a classic Nokia cell phone remembers the game Snake. What better game to replicate in the browser?</p>
 READMORE
+<div class="image">
+  <%= image_tag data.page.image %>
+  <h3><%= data.page.title %></h3>
+</div>
+<p><%= data.page.blurb %></p>
 <p>Built using HTML5 Canvas, Javascript (specifically CoffeeScript), enjoy the nostalgia overload of playing this game.</p>
 <p class="separator"><i class="icon-circle"></i> <i class="icon-circle"></i> <i class="icon-circle"></i></p>
 <p><strong>Demo:</strong> <a target="_blank" href="http://snake.coon-and-friends.com/">http://snake.coon-and-friends.com/</a></p>
